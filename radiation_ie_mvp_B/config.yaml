@@ -1,0 +1,18 @@
+output_dir: outputs
+max_papers_per_query: 50
+
+queries:
+  - "Hf MOF radiosensitizer"
+  - "X-ray induced ROS nanoparticle"
+  - "bismuth radiosensitizer radiotherapy"
+  - "cerium oxide radiosensitizer hypoxia"
+  - "X-ray excited optical luminescence MOF"
+
+sources:
+  - semantic_scholar
+  - crossref
+
+grobid_url: "http://localhost:8070"
+
+# Local copy is included in this bundle
+dataset_template_csv: "dataset_template_v1.csv"
