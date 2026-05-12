@@ -25,6 +25,14 @@ docker run --rm -p 8070:8070 lfoppiano/grobid:0.8.0
 python run_pipeline.py
 ```
 
+
+### Extract from your own PDFs
+If you already have multiple paper PDFs, put them in one folder and run:
+```bash
+python run_pipeline.py --config config.yaml --pdf_dir /path/to/my_pdfs
+```
+This skips paper search/download and directly parses attached PDFs, then writes `outputs/dataset_auto.csv`.
+
 Outputs (under `outputs/`):
 - `papers.csv`
 - `pdfs/`
